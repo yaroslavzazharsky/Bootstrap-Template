@@ -1,0 +1,280 @@
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+*{
+	box-sizing: border-box;
+}
+html {
+	font-size:62.5%;
+}
+
+
+body {
+	background: #26292e;
+	min-width: 320px;
+	color:#fefefe;
+	font:1.6rem 'Titillium Web';
+}
+/*---------------Header----------*/
+.header {
+	padding: 3rem 2rem;
+}
+.logo {
+	text-transform: uppercase;
+	font:2rem 'Titillium Web';
+	color:#fefefe;
+
+}
+.headerNav {
+	text-transform: uppercase;
+	list-style: none;
+	
+}
+.headerNav li a {
+	color:#fefefe;
+
+}
+.headerNav li a:hover {
+	color:#de5e60;
+	text-decoration: none;
+	
+}
+/*----------MAIN---------*/
+.works{
+	background: #2f3238;
+	margin:0 auto 2rem; 
+
+}
+#content h1 {
+	text-align: center;
+	font: 4.8rem/1 'Titillium Web'; 
+}
+#content .title {
+	font: 2.4rem/1.5 'Titillium Web'; 
+	text-align: center;
+	margin: 0 0 2rem;
+}
+.title .link {
+	color:#af5255;
+}
+.title .link:hover {
+	color:#fefefe;
+	text-decoration: none;
+}
+.sidebar .titleSidebar {
+	text-transform: uppercase;
+	text-align: center;
+	margin:0 0 1rem;
+}
+.sidebar .list {
+	list-style: none;
+	padding: 0;
+	margin:0 0 2rem;
+	display: flex;
+	justify-content: space-between;
+
+}
+.sidebar .list li {
+	display: inline-block;
+	color:#7f8289;
+}
+.sidebar .list li a:hover {
+	color:#de5e60;
+	text-decoration: none;
+}
+.sidebar .list li a {
+	color:#7f8289;
+}
+.items .item img {
+	margin:0 0 3rem; 
+	display:block;
+	width:100%;
+} 
+.items .item {
+	position: relative;
+}
+.items .item::after {
+	content: '';
+	position: absolute;
+	bottom: 3rem;
+	left: 15px;
+	width: calc(100% - 30px);
+	height: calc(100% - 3rem);
+	background: #bb5558;
+	display: none;
+}
+.items .item:hover::after {
+	display: block;
+	
+}
+
+.summary {
+	margin: 0 auto 2rem;
+}
+.summary .titleSummary{
+	text-align: center;
+	font: 4.8rem/1 'Titillium Web'; 
+}
+.description .worker img {
+	display: block;
+	max-width:calc(100vw - 60px); 
+	margin: 0 0 2rem;
+
+}
+.description .worker{
+	margin: 0 0 2rem;
+}
+.social{
+	padding: 0;
+	margin:0 0 2rem;
+}
+.social li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 2rem 0 0;
+}
+.social li a {
+	position: relative;
+	text-indent: -55555rem;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/spritesheet.png)  no-repeat;
+
+}
+/*.social li a::after {
+	position: absolute;
+	bottom: 0;
+	left:0;
+	content: '';
+	width: 16px;
+	height: 16px;
+	background: rgba(127, 130, 137, .5);
+	display: none;
+}*/
+.social li a:hover::after {
+	display: block;
+}
+.social li .twitter {
+	background-position: -57px -5px;
+}
+.social li .insta {
+	background-position:  -31px -5px;
+}
+.social li .ball {
+	background-position: -5px -5px
+}
+.description {
+	margin:0 0 2rem;
+}
+.worker .titleWorker {
+	font:2.4rem/1.5 'Titillium Web';
+	margin:0 0 2rem;
+}
+.titleBr {
+	text-transform: uppercase;
+	font: 2.4rem/1.5 'Titillium Web'; 
+	margin:0 0 3rem;
+}
+.titleBr span{
+	color: #de5e60;
+}
+.border {
+	border-left: 3px solid #de5e60;
+}
+.button {
+	display: flex;
+	justify-content: center;
+
+}
+.button a {
+	padding: 2rem 4rem;
+	text-transform: uppercase;
+	background: #3c3f45;
+	color:#fefefe;
+	text-decoration: none;
+}
+.button a:hover {
+	color:#3c3f45;
+	background: #fefefe;
+	text-decoration: none;
+}
+.infoImg{
+	position: relative;
+}
+.infoImg .info{
+	position: absolute;
+	bottom:-10px;
+	left:0;
+	width: 100%;
+	height: 15%;
+	background: #bb5558;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (min-width:970px) {
+	/*.headerNav {
+	display: flex;
+	justify-content: space-between;
+	}*/
+	.works {
+		margin:0 auto 10rem; 
+	}
+	#content .title {
+	text-align: center;
+	margin: 0 0 10rem;
+}
+	
+	.works .sidebar .list li {
+		display:block;
+		margin:0 0 2.5rem;
+	}
+	.works .sidebar .list {
+		display: block;
+	}
+	.sidebar .titleSidebar {
+	text-align: left;
+	margin:0 0 2.5rem;
+	
+	}
+	.social {
+		display: block;
+	}
+	.description {
+	margin:0 0 10rem;
+	}
+	.infoImg{
+	position: relative;
+	overflow: hidden;
+	}
+	.infoImg .info{
+	position: absolute;
+	top:-100%;
+	left:0;
+	width: 100%;
+	height: calc(100% - 20px);
+	background: #bb5558;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: top .5s; 
+	}
+	.infoImg:hover .info{
+	top:0;
+	}
+	/*.description .worker img {
+	width:100%; 
+	
+	}*/
+}
+@media screen and (min-width:750px){
+	.headerNav {
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.description .worker img {
+	width:100%; 
+	}
+}
