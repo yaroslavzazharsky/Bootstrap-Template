@@ -117,7 +117,7 @@ body {
 }
 .description .worker img {
 	display: block;
-	max-width:calc(100vw - 60px); 
+	width:100%;
 	margin: 0 0 2rem;
 
 }
@@ -127,6 +127,7 @@ body {
 .social{
 	padding: 0;
 	margin:0 0 2rem;
+	text-align: center;
 }
 .social li{
 	list-style: none;
@@ -170,6 +171,7 @@ body {
 .worker .titleWorker {
 	font:2.4rem/1.5 'Titillium Web';
 	margin:0 0 2rem;
+	text-align: center;
 }
 .titleBr {
 	text-transform: uppercase;
@@ -212,6 +214,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.summary .leftBorder{
+	padding: 0 1.5rem;
 }
 @media screen and (min-width:970px) {
 	/*.headerNav {
